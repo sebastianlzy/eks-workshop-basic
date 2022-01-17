@@ -20,4 +20,12 @@ yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' aws-auth.yaml aws-
 yq e aws-auth-with-user.yaml
 
 # Apply configmap
-kubectl apply -f aws-auth.yaml
+kubectl apply -f aws-auth-with-user.yaml
+
+# Verify updated value
+kubectl get configmap -n kube-system aws-auth -o yaml  | yq e
+
+# Clean up temporary files
+rm aws-auth-with-user.yaml
+rm aws-auth.yaml
+rm aws-user.yaml
