@@ -1,0 +1,8 @@
+data:
+  mapUsers: |
+    - userarn: arn:aws:iam::657625071348:user/rbac-user
+      username: rbac-user
+data:
+  mapUsers: |
+    - userarn: arn:aws:iam::657625071348:user/rbac-user
+      username: rbac-user
