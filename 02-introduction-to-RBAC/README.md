@@ -1,3 +1,9 @@
+# Objective for this module
+
+In this module, we’re going to explore k8s RBAC by creating an IAM user called rbac-user who is authenticated to access the EKS cluster but is only authorized (via RBAC) to list, get, and watch pods and deployments in the ‘rbac-test’ namespace.
+
+To achieve this, we’ll create an IAM user, map that user to a kubernetes role, then perform kubernetes actions under that user’s context.
+
 # What is RBAC?
 
 https://www.eksworkshop.com/beginner/090_rbac/
@@ -28,8 +34,3 @@ There are two types of Roles (Role, ClusterRole) and the respective bindings (Ro
 
 Namespaces are an excellent way of creating security boundaries, they also provide a unique scope for object names as the ‘namespace’ name implies. They are intended to be used in multi-tenant environments to create virtual kubernetes clusters on the same physical cluster.
 
-# Objective for this module
-
-In this module, we’re going to explore k8s RBAC by creating an IAM user called rbac-user who is authenticated to access the EKS cluster but is only authorized (via RBAC) to list, get, and watch pods and deployments in the ‘rbac-test’ namespace.
-
-To achieve this, we’ll create an IAM user, map that user to a kubernetes role, then perform kubernetes actions under that user’s context.

@@ -11,3 +11,7 @@ kubectl get pods -n rbac-test
 
 # Try retrieving pods from default namespace
 kubectl get pods -n kube-system
+
+# Reset access
+unset AWS_SECRET_ACCESS_KEY
+unset AWS_ACCESS_KEY_ID
