@@ -49,3 +49,6 @@ kubectl get pod -n kube-system -l "app.kubernetes.io/name=aws-efs-csi-driver,app
 #efs-csi-controller-6676748d47-5j5j9   3/3     Running   0          77s
 #efs-csi-node-bhwp8                    3/3     Running   0          12m
 #efs-csi-node-mrqjh                    3/3     Running   0          12m
+
+# Cleanup
+rm iam-policy-example.json
