@@ -1,6 +1,6 @@
 # Objective for this module
 
-In this chapter, we will review how to deploy a MySQL database using StatefulSet and Amazon Elastic Block Store (EBS) as PersistentVolume. The example is a MySQL single leader topology with a follower running asynchronous replication.
+In this chapter, we will review how to deploy a MySQL database using StatefulSet and Amazon Elastic Block Store (EBS) as PersistentVolume. The example is a MySQL single leader topology with a follower running asynchronous replication leveraging on dynamic provisioning.
 
 # What is statefulset?
 

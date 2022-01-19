@@ -63,5 +63,11 @@ kubectl -n kube-system rollout status deployment ebs-csi-controller
 # Verify that the csi controller is running
 kubectl get pod -n kube-system -l "app.kubernetes.io/name=aws-ebs-csi-driver,app.kubernetes.io/instance=aws-ebs-csi-driver"
 
+# Expected Output
+#ebs-csi-controller-654b9bbbd6-g7kj7   5/5     Running   0          21h
+#ebs-csi-controller-654b9bbbd6-hh7z9   5/5     Running   0          21h
+#ebs-csi-node-fv24n                    3/3     Running   0          21h
+#ebs-csi-node-j8q9z
+
 # Cleanup
 rm ebs-csi-policy.json
