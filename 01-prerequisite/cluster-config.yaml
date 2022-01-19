@@ -4,8 +4,6 @@ kind: ClusterConfig
 metadata:
   name: $EKS_CLUSTER_NAME
   region: ap-southeast-1
-  version: 1.21
-
 nodeGroups:
   - name: ng-1-m5-large
     instanceType: m5.large

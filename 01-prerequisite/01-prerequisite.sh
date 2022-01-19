@@ -2,6 +2,8 @@
 
 export EKS_CLUSTER_NAME=eks-workshop-basic
 
+
+
 # Installing eksctl binary
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 
