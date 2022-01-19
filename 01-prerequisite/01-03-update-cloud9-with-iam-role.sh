@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# NOTE: If you are running the following command on a cloud9 instance,
+# please follow the steps in https://www.eksworkshop.com/020_prerequisites/iamrole/ instead
+
 export CLOUD_9_INSTANCE_ROLE_NAME=cloud9-instance-profile-role
 export CLOUD_9_INSTANCE_PROFILE_NAME=cloud9-instance-profile
 
@@ -32,3 +35,4 @@ aws iam create-instance-profile --instance-profile-name $CLOUD_9_INSTANCE_PROFIL
 
 # Attach role to instance profile
 aws iam add-role-to-instance-profile --role-name $CLOUD_9_INSTANCE_ROLE_NAME --instance-profile-name $CLOUD_9_INSTANCE_PROFILE_NAME
+
