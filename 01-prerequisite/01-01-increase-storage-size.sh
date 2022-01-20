@@ -26,6 +26,11 @@ try:
 except ClientError as e:
     if e.response['Error']['Code'] == 'InvalidParameterValue':
         print('ERROR MESSAGE: {}'.format(e))"
+
+# View current size
+df -h
+
+# Reboot
 if [ $? -eq 0 ]; then
     sudo reboot
 fi
